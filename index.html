@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jacob Johnson — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-logo">JJ</div>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="https://drive.google.com/file/d/1hWGO2HoKyvmD2FrSAv8k1WpWcgVq7cVd/view?usp=drive_link" class="nav-cta" target="_blank" rel="noopener">Resume ↗</a>
+    </div>
+    <button class="nav-burger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-eyebrow">
+      <span class="dot"></span>
+      <span>Available for summer 2026 internships</span>
+    </div>
+    <h1 class="hero-name">
+      <span class="line">Jacob</span>
+      <span class="line italic">Johnson.</span>
+    </h1>
+    <div class="hero-sub">
+      <p>CS student at St. Cloud State University — building things at the intersection of systems and human experience. Focused on backend infrastructure and distributed systems.</p>
+    </div>
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <span class="label">Location</span>
+        <span>St. Cloud, MN</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="label">GPA</span>
+        <span>3.91 / 4.0</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="label">Graduating</span>
+        <span>Dec 2027</span>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Skills Bar -->
+  <div class="skills-ticker">
+    <div class="ticker-track">
+      <span>Java</span><span class="sep">·</span>
+      <span>Python</span><span class="sep">·</span>
+      <span>JavaScript</span><span class="sep">·</span>
+      <span>HTML</span><span class="sep">·</span>
+      <span>SQL</span><span class="sep">·</span>
+      <span>Redis</span><span class="sep">·</span>
+      <span>Kubernetes</span><span class="sep">·</span>
+      <span>gRPC</span><span class="sep">·</span>
+      <span>Kafka</span><span class="sep">·</span>
+      <span>Docker</span><span class="sep">·</span>
+      <span>AWS</span><span class="sep">·</span>
+      <span>Linux</span><span class="sep">·</span>
+      <!-- duplicate for seamless loop -->
+      <span>Java</span><span class="sep">·</span>
+      <span>Python</span><span class="sep">·</span>
+      <span>JavaScript</span><span class="sep">·</span>
+      <span>HTML</span><span class="sep">·</span>
+      <span>SQL</span><span class="sep">·</span>
+      <span>Redis</span><span class="sep">·</span>
+      <span>Kubernetes</span><span class="sep">·</span>
+      <span>gRPC</span><span class="sep">·</span>
+      <span>Kafka</span><span class="sep">·</span>
+      <span>Docker</span><span class="sep">·</span>
+      <span>AWS</span><span class="sep">·</span>
+      <span>Linux</span><span class="sep">·</span>
+    </div>
+  </div>
+
+  <!-- Work Section -->
+  <section class="section" id="work">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2>Selected Work</h2>
+    </div>
+
+    <div class="projects">
+
+      <article class="project" data-index="01">
+        <div class="project-top">
+          <div class="project-tags">
+            <span>Go</span>
+            <span>Raft Consensus</span>
+            <span>Distributed Systems</span>
+          </div>
+          <a href="https://github.com" class="project-link" target="_blank" rel="noopener" aria-label="View on GitHub">↗</a>
+        </div>
+        <h3 class="project-title">Distributed Key-Value Store</h3>
+        <p class="project-desc">Fault-tolerant KV store implementing the Raft consensus algorithm from scratch. Handles leader election, log replication, and snapshotting. Benchmarked at 50k ops/sec under simulated network partitions.</p>
+        <div class="project-footer">
+          <span class="project-stat">50k ops/sec</span>
+          <span class="project-stat">99.9% uptime under partition</span>
+        </div>
+      </article>
+
+      <article class="project" data-index="02">
+        <div class="project-top">
+          <div class="project-tags">
+            <span>Rust</span>
+            <span>WASM</span>
+            <span>Compiler</span>
+          </div>
+          <a href="https://github.com" class="project-link" target="_blank" rel="noopener" aria-label="View on GitHub">↗</a>
+        </div>
+        <h3 class="project-title">Toy Language Compiler</h3>
+        <p class="project-desc">A statically-typed language that compiles to WebAssembly. Includes a hand-written lexer, recursive descent parser, type inference engine, and WASM code generator. Runs in the browser.</p>
+        <div class="project-footer">
+          <span class="project-stat">Full compiler pipeline</span>
+          <span class="project-stat">Runs in browser</span>
+        </div>
+      </article>
+
+      <article class="project" data-index="03">
+        <div class="project-top">
+          <div class="project-tags">
+            <span>Python</span>
+            <span>PostgreSQL</span>
+            <span>Redis</span>
+          </div>
+          <a href="https://github.com" class="project-link" target="_blank" rel="noopener" aria-label="View on GitHub">↗</a>
+        </div>
+        <h3 class="project-title">Query Optimizer Profiler</h3>
+        <p class="project-desc">Tool that intercepts PostgreSQL EXPLAIN ANALYZE output, identifies slow query patterns, and suggests index strategies. Reduced p99 latency by 340ms in a production-like load test environment.</p>
+        <div class="project-footer">
+          <span class="project-stat">340ms p99 improvement</span>
+          <span class="project-stat">Automated index suggestion</span>
+        </div>
+      </article>
+
+      <article class="project" data-index="04">
+        <div class="project-top">
+          <div class="project-tags">
+            <span>TypeScript</span>
+            <span>React</span>
+            <span>WebSockets</span>
+          </div>
+          <a href="https://github.com" class="project-link" target="_blank" rel="noopener" aria-label="View on GitHub">↗</a>
+        </div>
+        <h3 class="project-title">Collaborative Code Editor</h3>
+        <p class="project-desc">Real-time multiplayer code editor using CRDTs for conflict-free concurrent editing. Implements the YATA algorithm for operational transformation without a central coordinator.</p>
+        <div class="project-footer">
+          <span class="project-stat">CRDT-based sync</span>
+          <span class="project-stat">&lt;50ms latency</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <!-- <section class="section" id="experience">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2>Experience</h2>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-left">
+          <span class="timeline-period">Summer 2025</span>
+          <span class="timeline-company">Stripe</span>
+        </div>
+        <div class="timeline-right">
+          <h3>Software Engineering Intern — Payments Infrastructure</h3>
+          <p>Worked on the charge routing service handling $1B+ in daily volume. Shipped a latency-aware load balancer that reduced average routing time by 18%. All in Go, all in production.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-left">
+          <span class="timeline-period">Jan–May 2025</span>
+          <span class="timeline-company">Berkeley Sky Computing Lab</span>
+        </div>
+        <div class="timeline-right">
+          <h3>Undergraduate Researcher</h3>
+          <p>Contributed to SkyPilot, an open-source framework for running LLM workloads across cloud providers. Implemented a cost-aware spot instance scheduler in Python, reducing compute costs by ~30% in benchmarks.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-left">
+          <span class="timeline-period">Fall 2024</span>
+          <span class="timeline-company">UC Berkeley</span>
+        </div>
+        <div class="timeline-right">
+          <h3>Teaching Assistant — CS 162 (Operating Systems)</h3>
+          <p>Led weekly discussion sections for 30 students. Held office hours, graded projects on filesystems and virtual memory. Wrote 3 new exam problems used in the final.</p>
+        </div>
+      </div>
+
+    </div>
+  </section> -->
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2>About</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="about-lead">I care about software that works correctly under pressure — distributed systems, low-level performance, and the invisible infrastructure that real products run on.</p>
+        <p>At Berkeley I've taken OS, Databases, Compilers, Networking, and Algorithms — not because the courses were required, but because I wanted a mental model of the full stack. I debug with strace before I reach for a profiler.</p>
+        <p>Outside of code I read about economic history, make pour-over coffee at an unreasonable level of precision, and play chess at a mediocre but improving 1700 Elo.</p>
+      </div>
+      <div class="about-sidebar">
+        <div class="sidebar-block">
+          <span class="label">Education</span>
+          <p>B.S. Computer Science<br/>St. Cloud State University, 2027</p>
+          <p>A.S. Computer Science<br/>North Hennepin Community College, 2025</p>
+        </div>
+        <div class="sidebar-block">
+          <span class="label">Coursework</span>
+          <ul>
+            <li>CS 162 — Operating Systems</li>
+            <li>CS 186 — Databases</li>
+            <li>CS 164 — Compilers</li>
+            <li>CS 168 — Networking</li>
+            <li>CS 170 — Algorithms</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2>Contact</h2>
+    </div>
+    <div class="contact-content">
+      <p class="contact-lead">Recruiting for summer 2026? I'm looking for internships in backend infrastructure, systems, or developer tooling. Let's talk.</p>
+      <a href="mailto:jacobjohnson0422@gmail.com" class="contact-email">jacobjohnson0422@gmail.com</a>
+      <div class="contact-links">
+        <a href="https://github.com/jacobjohnson04" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/jacobjohnson04/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://drive.google.com/file/d/1hWGO2HoKyvmD2FrSAv8k1WpWcgVq7cVd/view?usp=drive_link" target="_blank" rel="noopener">Resume PDF ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span>Jacob Johnson © 2026</span>
+    <span>Built without a template.</span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
